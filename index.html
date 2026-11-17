@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mahfuj Rahman | Software Developer</title>
-  <meta name="description" content="Portfolio of Mahfuj Rahman, CSE undergraduate building C# and .NET applications." />
+  <title>Mahfuj Rahman | E-portfolio</title>
+  <meta name="description" content="E-portfolio of Mahfuj Rahman, CSE undergraduate at AIUB." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -13,130 +13,111 @@
 <body>
   <header class="nav-wrap">
     <nav class="nav" aria-label="Main">
-      <a class="nav-logo" href="#top">MR</a>
+      <a class="nav-logo" href="index.html">MR</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       <ul class="nav-links" id="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="activities.html">Co-curricular</a></li>
+        <li><a href="experience.html">Experience</a></li>
       </ul>
-      <a class="nav-cta" href="mahfuj-cv.pdf" target="_blank" rel="noopener">Download CV</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
+    <!-- 1. PROFESSIONAL PHOTO + SHORT BIO -->
     <section class="hero">
       <div class="hero-text">
-        <p class="hello">Hi, I’m Mahfuj Rahman</p>
-        <h1>I build clean software with C# and .NET.</h1>
-        <p class="lead">CSE undergraduate at AIUB, growing into a professional software developer. Right now I’m focused on <span class="type" id="type-target">C# Development</span><span class="cursor" aria-hidden="true"></span></p>
+        <p class="hello">CSE undergraduate, AIUB</p>
+        <h1>Mahfuj Rahman</h1>
+        <p class="lead">I’m a Computer Science and Engineering undergraduate at American International University–Bangladesh. I build desktop and web applications with C#, .NET, PHP and SQL, and I’m looking for an entry-level software engineer role where I can keep growing.</p>
         <div class="actions">
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn" href="https://github.com/Mahfuj-75" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/mahfuj-rahman-1884012b0/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn primary" href="#video">Watch my introduction</a>
+          <a class="btn" href="resume.html">View resume</a>
         </div>
       </div>
       <figure class="photo">
-        <img src="images/mahfuj.jpg" alt="Mahfuj Rahman" />
-        <figcaption>Dhaka, Bangladesh</figcaption>
+        <!-- EDIT: replace with a clear, formal photo (portrait, 4:5 works best) -->
+        <img src="{images,video,files}/Mahfuj_For.jpg" alt="Formal portrait of Mahfuj Rahman" />
       </figure>
     </section>
 
     <section id="about" class="section">
-      <h2>About</h2>
-      <div class="about-grid">
-        <p>I’m a CSE undergraduate at AIUB with a strong interest in C#, the .NET Framework and software engineering. I like building clean, efficient and easy-to-use applications, and I keep looking for better ways to solve real problems with code.</p>
-        <p>My long-term goal is to build modern, reliable software and contribute to projects that help people and businesses in meaningful ways.</p>
+      <h2>About me</h2>
+      <div class="two-col">
+        <div>
+          <p>I enjoy turning an idea into a working system, from the interface to the database. My projects include an event management app, an online voting database and an inventory system.</p>
+          <p>Outside class I co-founded The Castor, a digital news platform, and now lead operations and product at TikiTor, an event ticketing platform. I want to build reliable, scalable software that helps people.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>University</dt><dd>American International University–Bangladesh</dd></div>
+          <div><dt>Program</dt><dd>BSc in Computer Science and Engineering</dd></div>
+          <div><dt>Started</dt><dd>September 2023</dd></div>
+          <div><dt>CGPA</dt><dd>3.16 / 4.00</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="chips">
-        <li>.NET / .NET Framework</li><li>ASP.NET</li><li>OOP</li>
-        <li>Microsoft SQL Server</li><li>Oracle SQL</li><li>Java</li>
-        <li>HTML</li><li>CSS</li><li>JavaScript</li>
-      </ul>
-    </section>
-
-    <section id="journey" class="section">
-      <h2>Journey</h2>
-      <ol class="timeline">
-        <li>
-          <span class="when">2026 – Present</span>
-          <h3>COO, TikiTor</h3>
-          <p>Ticketing platform for managing and selling event tickets.</p>
-        </li>
-        <li>
-          <span class="when">2023 – Present</span>
-          <h3>BSc in CSE</h3>
-          <p>American International University–Bangladesh</p>
-        </li>
-        <li>
-          <span class="when">2023 – Present</span>
-          <h3>Editor, The Castor</h3>
-          <p>Online news portal representing Bangladeshi culture and heritage to the world.</p>
-        </li>
-        <li>
-          <span class="when">2020 – 2022</span>
-          <h3>HSC</h3>
-          <p>Dhaka Imperial College</p>
-        </li>
-        <li>
-          <span class="when">2018 – 2020</span>
-          <h3>SSC</h3>
-          <p>Siraj Mia Memorial Model School</p>
-        </li>
-      </ol>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="project">
-          <div class="shot"><img src="images/EMS.png" alt="Event Management System screenshot" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">C# · SQL Server</span>
-            <h3>Event Management System</h3>
-            <p>A Windows app to manage events, registrations, user accounts, payments and bookings, with secure login and a simple WinForms interface.</p>
-            <a class="link" href="https://github.com/Mahfuj-75/F-P-Event-Management-System" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="shot"><img src="images/Personify.png" alt="Personify screenshot" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">Java</span>
-            <h3>Personify</h3>
-            <p>Stores, analyzes and displays your music taste. Save favorite songs, organize them by genre and see personal insights.</p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="shot"><img src="images/orcle.jpeg" alt="Online Voting Management System screenshot" loading="lazy" /></div>
-          <div class="body">
-            <span class="tag">Oracle SQL</span>
-            <h3>Online Voting Management System</h3>
-            <p>Secure voter registration, candidate management and real-time vote counting, built on relational database design for accurate data.</p>
-          </div>
-        </article>
+    <!-- 2. VIDEO INTRODUCTION -->
+    <section id="video" class="section">
+      <h2>Video introduction</h2>
+      <p class="intro">A short introduction about me, my studies and my goals.</p>
+      <div class="video">
+        <!-- EDIT: put your file at video/intro.mp4 and a thumbnail at images/video-poster.jpg.
+             To use YouTube instead, delete the <video> and use:
+             <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Video introduction" allowfullscreen></iframe> -->
+        <video controls preload="metadata" poster="images/video-poster.jpg">
+          <source src="video/intro.mp4" type="video/mp4" />
+          Your browser doesn’t support video playback.
+        </video>
+      </div>
+      <div class="video-meta">
+        <p>Length: about 2 minutes. I cover who I am, what I study, what I have built and where I want to go next.</p>
+        <ol class="outline">
+          <li>Who I am and where I study</li>
+          <li>Skills and interests</li>
+          <li>Projects and experience</li>
+          <li>Career goals</li>
+        </ol>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Let’s work together</h2>
-      <p>I’m open to internships and junior developer roles.</p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:mahfuj.majumder2002@gmail.com">Send an email</a>
-        <a class="btn" href="mahfuj-cv.pdf" target="_blank" rel="noopener">Download CV</a>
+    <section class="section">
+      <h2>Explore more</h2>
+      <div class="cards-2">
+        <a class="pagecard" href="resume.html">
+          <h3>Resume</h3>
+          <p>Education, experience, projects and certifications, with a PDF download.</p>
+          <span>Open resume</span>
+        </a>
+        <a class="pagecard" href="skills.html">
+          <h3>Skills</h3>
+          <p>Languages, tools and soft skills.</p>
+          <span>See skills</span>
+        </a>
+        <a class="pagecard" href="activities.html">
+          <h3>Co-curricular activities</h3>
+          <p>Contests, leadership and volunteering.</p>
+          <span>See activities</span>
+        </a>
+        <a class="pagecard" href="experience.html">
+          <h3>Experience</h3>
+          <p>Work experience and projects.</p>
+          <span>See experience</span>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Mahfuj Rahman</footer>
-
+  <footer>
+    <p>© <span id="year"></span> Mahfuj Rahman</p>
+    <nav aria-label="Contact">
+      <a href="mailto:mahfuj.r.me@gmail.com">Email</a>
+      <a href="https://github.com/Mahfuj-75" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mahfuj-rahman-1884012b0/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
