@@ -154,3 +154,40 @@ footer a:hover{color:var(--accent)}
 .hero-text>*:nth-child(4){animation-delay:.24s}.photo{animation-delay:.2s}
 @media print{.nav-wrap,footer,.page-head .btn{display:none}.sheet{border:0;box-shadow:none;padding:0}body{background:#fff}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.sheet-top.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.resume-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.resume-info p {
+  overflow-wrap: anywhere;
+}
+
+.resume-photo {
+  display: block;
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .sheet-top.resume-header {
+    gap: 14px;
+  }
+
+  .resume-photo {
+    width: 85px;
+    height: 110px;
+  }
+}
